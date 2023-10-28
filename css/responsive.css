@@ -9,7 +9,7 @@ Version:	1.1
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 /* Header Sticky */
 .section{
-	padding:70px 0px;
+	padding:20px 0px;
 }
 .section-title {
 	margin-bottom: 35px;
@@ -378,7 +378,7 @@ Version:	1.1
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
 .header.sticky{
-	
+
 }
 .header.sticky .header-bottom{
 	position:absolute;
@@ -452,14 +452,14 @@ Version:	1.1
 	margin:0;
 }
 .slicknav_nav li:hover a{
-	color:#1A76D1;
+	color:#034fb4;
 }
 .slicknav_nav li .dropdown li a{
 	color:#2C2D3F;
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a:hover{
-	color:#1A76D1;
+	color:#034fb4;
 }
 .slicknav_nav li .slicknav_item{
 	background:transparent;
@@ -471,7 +471,7 @@ Version:	1.1
 	font-weight:400;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #1A76D1;
+	background-color: #034fb4;
 	box-shadow: none;
 	text-shadow: none;
 }
@@ -479,7 +479,7 @@ Version:	1.1
 	color:#2C2D3F;
 }
 .slicknav_nav li:hover .slicknav_arrow{
-	color:#1A76D1;
+	color:#034fb4;
 }
 .slicknav_menu .slicknav_icon-bar {
 	display: block;
