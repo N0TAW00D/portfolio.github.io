@@ -15,11 +15,13 @@
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon-06.png">
 		
+		
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap" rel="stylesheet">
+
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- Nice Select CSS -->
@@ -43,33 +45,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
-		
-		<!-- google chart -->
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    	<script type="text/javascript">
-      	google.charts.load('current', {'packages':['bar']});
-      	google.charts.setOnLoadCallback(drawChart);
-
-      	function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Semester', 'Math', 'Science', 'English','GPA'],
-          ['M4 Sem-1', 4, 3.9, 3.83, 3.93],
-          ['M4 Sem-2', 4, 3.7, 4, 3.84],
-          ['M5 Sem-1', 3, 3.7, 3.66, 3.64],
-          ['M5 Sem-2', 3.33, 3.6, 4, 3.64]
-        ]);
-
-        var options = {
-          chart: {}
-          //colors: ["red","green","blue","yellow"]
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      	}
-    	</script>
-		<!-- google chart -->
 
 		<!-- scroll -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -90,7 +65,7 @@
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top
-			}, 800, function(){
+			}, 1000, function(){
 		
 				// Add hash (#) to URL when done scrolling (default click behavior)
 				window.location.hash = hash;
@@ -100,15 +75,12 @@
 		});
 		</script>
 		<!-- scroll -->
+		
     </head>
-
     <body>
 	
-		
-		
-	
-		<!-- Header Area -->
-		<header class="header" >
+		 <!-- Header Area -->
+		 <header class="header" >
 			<!-- Topbar -->
 			<div class="topbar">
 				<div class="container">
@@ -171,12 +143,9 @@
 												</ul>
 											</li>
 											<li><a href="certificate.html">Certificates</a></li>
-											<li><a href="#">Blog <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
-												</ul>
-											</li>
-											<li><a href="contact.html">Contact</a></li>
+											<li><a href="records.html">Records</a></li>
+											
+											<li><a href="contact.html">About Me</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -194,152 +163,209 @@
 			<!--/ End Header Inner -->
 		</header>
 		<!-- End Header Area -->
-		
-		<!-- Breadcrumbs -->
-		<div class="breadcrumbs overlay">
+		<!-- Start Skill -->
+		<section class="services section">
 			<div class="container">
-				<div class="bread-inner">
-					<div class="row">
-						<div class="col-sm-12 col-lg-6">
-							<h2><br><br><br>Records</h2>
-							<ul class="bread-list">
-								<li><a href="index.html">Home</a></li>
-								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Records</li>
-							</ul>
-						</div>
-						<div class="col-sm-12 col-lg-6">
-							<div class="main-sidebar">
-							<div class="single-widget category">
-								<h3 class="title">GPA chart</h3>
-								<div id="columnchart_material" style="width: auto;max-width: 450px;height: auto; max-height: 200px;"></div>
-							</div>
-							</div>
-						</div>
-					</div>
-					<br><br>
-					<div class="main" id="section1">
-					<a href="#section2"> <h5 class="footer" style="color: aliceblue;text-decoration-line:underline;">See More</h5></a>
-					<i class="icofont-simple-down icofont-3x" style="color: aliceblue;"></i>
+				<div class="news-head">
+					<img src="img/PSreportBan.png" alt="#" style="border-radius: 10px;">
+					
+				</div>
+				<br><br><br>
+				<div class="col-12" align="center">
+				<div class="main" id="section1">
+					<a href="#section2"> <h5 class="footer" style="color:#034fb4;text-decoration-line: underline;">See More</h5></a>
+					<i class="icofont-simple-down icofont-3x" style="color:#034fb4;"></i>
 					</div>
 				</div>
-				
 			</div>
 			<div id="section2"></div>
-		</div>
-		<!-- End Breadcrumbs -->
+		</section>
+		<!--/ End service -->
 		
 		<!-- Single News -->
 		<section class="news-single section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-12">
+					<div class="col-lg-8 col-12">
 						<div class="row">
 							<div class="col-12">
 								<div class="single-main">
-									<!-- News Title -->
-									<h3 class="news-title">Transcript</h3>
-									<p class="font-presetNotoReg">ใบระเบียนแสดงผลการเรียน (ปพ.1)<br></sp> &ensp;
 									<!-- News Head -->
 									<div class="news-head">
-										<img id="myImg" src="img/transcipt.jpg" alt="transcript" width="2500" height="3500">
-										<!-- The Modal -->
-										<div id="myModal" class="modal">
-											<img class="modal-content" id="img01">
-											<div id="caption"></div>
-										</div>
-										<script>
-											// Get the modal
-											var modal = document.getElementById('myModal');
-											 
-											// Get the image and insert it inside the modal - use its "alt" text as a caption
-											var img = document.getElementById('myImg');
-											var modalImg = document.getElementById("img01");
-											var captionText = document.getElementById("caption");
-											img.onclick = function(){
-												modal.style.display = "block";
-												modalImg.src = this.src;
-												modalImg.alt = this.alt;
-												captionText.innerHTML = this.alt;
-											}
-											// When the user clicks on <span> (x), close the modal
-											modal.onclick = function() {
-												img01.className += " out";
-												setTimeout(function() {
-												   modal.style.display = "none";
-												   img01.className = "modal-content";
-												 }, 400);
-												
-											 }    
-												
-										</script>
-										
-									</div>	
+										<img src="img/PSreportban-12.jpg" alt="#" style="border-radius: 10px;">
+									</div>
 									
+									<div>
+									<!-- <div class="container; col-lg-12">
+										<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12">
+										<ul class="table-list">
+											<li class="font-presetNotoReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     สิ่งแวดล้อมยั่งยืน</li>
+										</ul>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12">
+											<ul class="table-list">
+												<li class="font-presetNotoReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     สนับสนุนแนวทางการแยกขยะ</li>
+											</ul>
+										</div>
+										</div>
+									</div> -->
+									</div><br>
+									<div class="news-text">
+										<p class="font-presetNotoReg">โครงงานคอมพิวเตอร์ ประเภทซอฟต์แวร์ เรื่องเว็บแอปพลิเคชันแจ้งซ่อม PS report มีความสามารถในการร่นระยะเวลาการแก้ไขปัญหาต่างๆที่อาจเกิดขึ้นใน Smart Classroom เช่น อุปกรณ์ฉายภาพหรือเครื่องเสียงในห้องเรียนเสีย (โสตทัศนูปกรณ์) เนื่องจากในสมัยนี้ห้องเรียนของนักเรียนมีอุปกรณ์ดิจิทัลทางการศึกษามากมาย การที่อุปกรณ์ดิจิทัลชำรุดเสียหาย อาจทำให้การเรียนขาดช่วง</p>
+										<br>
+										<div class="news-text">
+											<div class="single-widget">
+												<div class="row">
+													<div class="col-lg-4 col-md-4 col-12">
+														<a href="https://drive.google.com/file/d/1Im0glNxIAwbSHtmJ3to1QSvbHUTlvQt8/view?usp=drivesdk" alt="วิดีโอโครงงาน" target="_blank">
+														<div class="single-widget" align="center">
+															<i class="icofont-billboard icofont-4x" style="color: #034fb4;"></i>
+															<br><br>
+															<h4 class="font-presetNotoBold">บอร์ดโครงงาน</h4>
+														</div></a>
+														
+												
+													</div>
+													<div class="col-lg-4 col-md-4 col-12">
+														<a href="https://drive.google.com/file/d/1scZopYlN3VW5EI6F9PVe5T8zX_5Ai_i7/view" alt="เอกสารโครงงาน" target="_blank">
+														<div class="single-widget" align="center">
+															<i class="icofont-papers icofont-4x" style="color: #034fb4;"></i>
+															<br><br>
+															<h4 class="font-presetNotoBold">เอกสารโครงงาน</h4>
+														</div></a>
+														
+													</div>
+													<div class="col-lg-4 col-md-4 col-12">
+														<a href="https://youtu.be/MgDB7dV-q_c?feature=shared" alt="วิดีโอโครงงาน" target="_blank">
+														<div class="single-widget" align="center">
+															<i class="icofont-video-cam icofont-4x" style="color: #034fb4;"></i>
+															<br><br>
+															<h4 class="font-presetNotoBold">วิดีโอโครงงาน</h4>
+														</div></a>
+														
+												
+													</div>
+													
+												</div>
+											</div>
+										</div>
+										<br>
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="cert/silapaspm1.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="cert/silapaspm2.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+												<div class="container"><br></div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/silpapre-11.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/silpagroup-11.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+												<div class="container"><br></div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/silpaw-board-11.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/silpaw-tphin.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+												<div class="container"><br></div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/silpawork.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/silpaw-ohm-11.jpg" alt="#" style="border-radius: 10px;">
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									<div class="blog-bottom">
+									</div>
 								</div>
 							</div>
-					<div class="col-12">
+							<div class="col-12">
+								
+							</div>
+						</div>
 					</div>
-					</div>
-					</div>
-					<div class="col-lg-6 col-12">
+					<div class="col-lg-4 col-12">
 						<div class="main-sidebar">
 							
 							<!-- Single Widget -->
-							<!-- <div class="single-widget category">
-								<h3 class="title">GPA chart</h3>
-								<div id="columnchart_material" style="width: 450px; height: 200px;"></div>
-							</div> -->
 
-							<!-- <div><br></div>
 							<div class="single-widget category">
-								<h3 class="title">Blog Categories</h3>
-								<ul class="categor-list">
-									<li><a href="#">Men's Apparel</a></li>
-									<li><a href="#">Women's Apparel</a></li>
-									<li><a href="#">Bags Collection</a></li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Sun Glasses</a></li>
-								</ul>
-							</div> -->
-							
-							<div class="single-main">
-								<h3 class="news-title">Records Certification</h3>
-								<div class="news-head">
-									<p class="font-presetNotoReg">ใบรับรองผลการศึกษา (ปพ.7)<br></sp> &ensp;
-									<img id="myImg2" src="img/record certification.jpg" alt="transcript" width="2500" height="3500">
-									<!-- The Modal -->
-									<div id="myModal2" class="modal">
-										<img class="modal-content" id="img02">
-										<div id="caption"></div>
-									</div>
-									<script>
-										// Get the modal
-										var modal = document.getElementById('myModal2');
-										 
-										// Get the image and insert it inside the modal - use its "alt" text as a caption
-										var img = document.getElementById('myImg2');
-										var modalImg = document.getElementById("img02");
-										var captionText = document.getElementById("caption");
-										img.onclick = function(){
-											modal.style.display = "block";
-											modalImg.src = this.src;
-											modalImg.alt = this.alt;
-											captionText.innerHTML = this.alt;
-										}
-										// When the user clicks on <span> (x), close the modal
-										modal.onclick = function() {
-											img01.className += " out";
-											setTimeout(function() {
-											   modal.style.display = "none";
-											   img01.className = "modal-content";
-											 }, 400);
-											
-										 }    
-											
-									</script>
+								<h3 class="font-presetPopReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     Smart Classroom</h3><br>
+								<h3 class="font-presetNotoReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     ลดระยะเวลา</h3><br>
+								<h3 class="font-presetNotoReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     อำนวยความสะดวก</h3><br>
+								<h3 class="font-presetNotoReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     การสื่อสารสองทาง</h3><br>
+								<h3 class="font-presetNotoReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     จัดเก็บสถิติ</h3><br>
+								<h3 class="font-presetNotoReg" style="color: #034fb4;font-size: 20px;"><i class="icofont icofont-ui-check"></i>&emsp;&emsp;     Line Notify</h3><br>
+								<div class="container; col-12">
+									<div class="row">
 									
-								</div>	
+									</div>
+								</div>
+							</div>
+							
+							<div class="single-widget side-tags">
+								<h3 class="title;font"><h3 class="font-presetNotoBold" style="font-size: 20px;color: #034fb4;">การพัฒนา</h3></h3><br>
+								<div class="container" style="line-height: 30px;">
+								<li class="font-presetPopReg"><a href="#">APIs</a></li>
+								<li class="font-presetPopReg"><a href="#">Glideapps</a></li>
+								<li class="font-presetPopReg"><a href="#">Make.com</a></li>
+								<li class="font-presetPopReg"><a href="#">Line Notify</a></li>
+								<li class="font-presetPopReg"><a href="#">Smart Device</a></li>
+								</div><br>
+								<div class="image-gallery">
+									<div class="row">
+										<div class="col-12">
+											<div class="single-image">
+												<img src="img/psreportHow.jpg" alt="#" style="border-radius: 10px;">
+											</div>
+											<br>
+										</div>
+										<div class="col-12">
+											<div class="single-image">
+												<img src="img/glide.png" alt="#" style="border-radius: 10px;">
+											</div>
+											<br>
+										</div>
+										<div class="col-12">
+											<div class="single-image">
+												<img src="img/glide2.png" alt="#" style="border-radius: 10px;">
+											</div>
+											<br>
+										</div>
+										<div class="col-12">
+											<div class="single-image" align="center">
+												<img src="img/appsample.png" alt="#" style="border-radius: 10px;height: 550px;">
+											</div>
+											<br>
+										</div>
+										
+									</div>
+								</div>
 							</div>
 							<!--/ End Single Widget -->
 						</div>
